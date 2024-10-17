@@ -1,0 +1,53 @@
+.project_section
+{
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 110px;
+    display: flex;
+    align-items: flex-start;
+    #background: #171717;
+}
+
+.project_empty_div
+{
+    max-width: 210px;
+    width: 100%;
+    #background: gray;
+}
+
+.project_title_text
+{
+    font-size: large;
+    text-align: start;
+    padding: 10px 20px 20px 20px;
+    margin: 0;
+    text-decoration: none;
+    font-weight: bold;
+    color: #808080;
+}
+
+.project_image_div
+{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    #background: gray;
+}
+
+.project_image
+{
+    border-radius: 7px;
+}
+
+.project_text_div
+{
+    width: 100%;
+    #background: gray;
+}
+
+.project_text
+{
+    font-size: large;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0;
+}

@@ -1,0 +1,46 @@
+.hyperlink
+{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    color: orangered;
+    transition: color 0.2s ease;
+}
+
+.hyperlink::before
+{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -1px;
+    left: 50%;
+    background-color: orangered;
+    transition: width 0.2s ease, left 0.2s ease;
+}
+
+.hyperlink:hover::before
+{
+    width: 100%;
+    left: 0;
+}
+
+.boxed_hyperlink
+{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #808080;
+    padding: 3px 5px 3px 5px;
+    border: 2px solid #808080;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.boxed_hyperlink:hover
+{
+    border: 2px solid orangered;
+    color: orangered;
+}

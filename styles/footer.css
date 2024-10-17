@@ -1,0 +1,32 @@
+.footer_section
+{
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 256px;
+    text-align: center;
+    #background: #171717;
+}
+
+.footer_link_div
+{
+    padding: 20px 20px 60px 0px;
+    word-spacing: 10px;
+    text-align: end;
+    font-size: large;
+    width: 100%;
+}
+
+.footer_developed_by_div
+{
+    padding: 20px 0px 60px 20px;
+    text-align: start;
+    width: 100%;
+}
+
+.footer_developed_by_text
+{
+    margin: 0px;
+    font-size: large;
+    opacity: 30%;
+}

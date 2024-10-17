@@ -6,19 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matija Jambresic</title>
     <link rel="icon" type="image/png" href="./assets/icon.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/intro.css">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/hyperlink.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <script src="script.js"></script>
 </head>
 
 <body>
-
-    <!-- Intro & Hello -->
+    <!-- HELLO -->
     <section class="hello_section">
         <div class="intro_text_div">
             <p>Hello!</p>
         </div>
     </section>
-    
+
+    <!-- INTRO -->
     <section class="intro_section">
         <div class="intro_text_div">
             <p>
@@ -32,145 +37,184 @@
         </div>
     </section>
 
+    <!-- SEND MESSAGE -->
     <section class="intro_section">
         <div class="normal_text">
             <p>
                 Send me a message at 
-                <a href="mailto:matija.jambresic@yahoo.com" class="highlighted_text">matija.jambresic@yahoo.com</a>
+                <a href="mailto:matija.jambresic@yahoo.com" class="hyperlink">matija.jambresic@yahoo.com</a>
                 or
-                <a href="https://www.linkedin.com/in/matijajambresic/" target="_blank" rel="noopener noreferrer" class="highlighted_text">LinkedIn</a>.
+                <a href="https://www.linkedin.com/in/matijajambresic/" target="_blank" rel="noopener noreferrer" class="hyperlink">LinkedIn</a>.
             </p>
         </div>
     </section>
 
-    <!-- Background -->
-    <section class="background_section">
-        <div class="background_title_div">
-            <p class="normal_text"><span class="highlighted_text">Background</span></p>
-        </div>
-        <div class="background_text_div">
-            <p class="normal_text">
-                I'm a professional <span class="bold_text"> gameplay and networking engineer </span> based in Zagreb, Croatia. With over <span class="bold_text">7 years of experience</span>, I have contributed to a diverse range of commercial and open-source software projects.
-            </p>
-
-            <p class="normal_text">
-                Holding a <span class="bold_text">Professional Bachelor’s degree</span> in <span class="bold_text">Computer Science</span> with a specialization in <span class="bold_text">Software Engineering</span>, I possess a comprehensive understanding of software development and engineering principles.
-            </p>
-
-            <p class="normal_text">
-                Most of my specialization has been in <span class="bold_text">Unity</span> and <span class="bold_text">C#</span>, though I am also familiar with <span class="bold_text">Unreal Engine</span>.
-            </p>
-        </div>
-    </section>
-
-    <!-- Game Projects-->
-    <section class="title_section">
+    <!-- ARROWS -->
+    <section class="intro_arrows_section">
         <div>
-            <p class="title_text">Game Projects</p>
-            <p class="subtitle_text">The following are some games I've made or heavily contributed to.</p>
+            <img class="intro_arrow" src="./assets/adn.gif">
+        </div>
+        <div style="margin-top: -78px">
+            <img class="intro_arrow" src="./assets/adn.gif">
         </div>
     </section>
+
+    <!-- CONTENT -->
+    <section class="content_section">
+        
+        <!-- BACKGROUND -->
+        <section class="content_description_section" style="margin-top: 65px">
+            <div class="content_description_title_div">
+                <p class="normal_text"><span class="highlighted_text">Background</span></p>
+            </div>
+            <div class="content_description_text_div">
+                <p class="normal_text">
+                    I'm a professional <span class="bold_text"> gameplay and networking engineer </span> based in Zagreb, Croatia. With over <span class="bold_text">7 years of experience</span>, I have contributed to a diverse range of commercial and open-source software projects.
+                </p>
     
-    <section class="projects_section">
-        <div class="project_image_div">
-            <img class="project_image" src="./assets/klp.gif">
-        </div>
-        <div class ="project_text_div">
-            <p class="project_title_text"><span class="highlighted_text">Kick League</span></p>
-            <p class="project_text">Retro-styled, arcade multiplayer balling game!</p>
-            <p class="project_text">Currently in development, but you can get an exclusive sneak peek by requesting the game build.</p>
-            <p class="project_text"><a href="https://www.youtube.com/watch?v=rRJOZeQzzzc" target="_blank" rel="noopener noreferrer" class="hyperlink">Video</a></p>
-            
-        </div>
+                <p class="normal_text">
+                    Holding a <span class="bold_text">Professional Bachelor’s degree</span> in <span class="bold_text">Computer Science</span> with a specialization in <span class="bold_text">Software Engineering</span>, I possess a comprehensive understanding of software development and engineering principles.
+                </p>
+    
+                <p class="normal_text">
+                    Most of my specialization has been in <span class="bold_text">Unity</span> and <span class="bold_text">C#</span>, though I am also familiar with <span class="bold_text">Unreal Engine</span>.
+                </p>
+            </div>
+        </section>
+
+        <!-- GAME PROJECTS -->
+        <section class="content_description_section" style="margin-top: 185px">
+            <div class="content_description_title_div">
+                <p class="normal_text"><span class="highlighted_text">Game Projects</span></p>
+            </div>
+            <div class="content_description_text_div">
+                <p class="normal_text">
+                    The following are some games I've made or heavily contributed to.
+                </p>
+            </div>
+        </section>
+
+        <!-- KICK LEAGUE -->
+        <section class="project_section">
+            <div class ="project_empty_div"></div>
+            <div class="project_image_div">
+                <img class="project_image" src="./assets/klp.gif">
+            </div>
+            <div class ="project_text_div">
+                <p class="project_title_text">Kick League</p>
+                <p class="project_text">Retro-styled, arcade multiplayer balling game!</p><br>
+                <p class="project_text">Currently in development, but you can get an exclusive sneak peek by requesting the game build.</p><br>
+                <p class="project_text"><a href="https://www.youtube.com/watch?v=rRJOZeQzzzc" target="_blank" rel="noopener noreferrer" class="boxed_hyperlink linkEffect--insideOut">Video</a></p>
+            </div>
+        </section>
+
+        <!-- PHAGEBORN -->
+        <section class="project_section">
+            <div class ="project_empty_div"></div>
+            <div class="project_image_div">
+                <img class="project_image" src="./assets/pha.gif">
+            </div>
+            <div class ="project_text_div">
+                <p class="project_title_text">PHAGEBORN: Online Card Game</p>
+                <p class="project_text">Immersive online card game which combines rich and engaging storytelling with deep and strategic gameplay.</p><br>
+                <p class="project_text">
+                    <a href="https://store.steampowered.com/app/1037990/PHAGEBORN_Online_Card_Game/" target="_blank" rel="noopener noreferrer" class="boxed_hyperlink">Steam</a>
+                    <a href="https://www.youtube.com/watch?v=qEAvwwXACf8" target="_blank" rel="noopener noreferrer" class="boxed_hyperlink">Video</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- AND A LOT MORE -->
+        <section class="project_section">
+            <div class ="project_empty_div"></div>
+            <div class="project_image_div">
+                <img class="project_image" src="./assets/oth.gif">
+            </div>
+            <div class ="project_text_div"> 
+                <p class="project_title_text">And a lot more</p>
+                <p class="project_text">Mobile games and prototypes, some of which are:</p><br>
+                <p class="project_text">
+                    <a href="https://www.youtube.com/watch?v=gQjPkl1dweU" target="_blank" rel="noopener noreferrer" class="boxed_hyperlink">Bunners</a>
+                    <a href="https://www.youtube.com/watch?v=JxALjkjmOGU" target="_blank" rel="noopener noreferrer" class="boxed_hyperlink">White Blocks</a>
+                    <a href="https://youtu.be/pKm48l-cFgo?si=v6gDInr4Iq4c34Gu" target="_blank" rel="noopener noreferrer" class="boxed_hyperlink">Timecode</a>
+                    <a href="https://youtu.be/aRm2VTPR7DQ?si=rL5PXASp6zr4cpaW" target="_blank" rel="noopener noreferrer" class="boxed_hyperlink">Snake Colors</a>
+                    <a href="https://youtu.be/SNGuwE9SI9I?si=AmXg9Dysd2vneMzY" target="_blank" rel="noopener noreferrer" class="boxed_hyperlink">Planes</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- GAME NETWORKING -->
+        <section class="content_description_section" style="margin-top: 185px">
+            <div class="content_description_title_div">
+                <p class="normal_text"><span class="highlighted_text">Game Tools</span></p>
+            </div>
+            <div class="content_description_text_div">
+                <p class="normal_text">
+                    Some code works better as a tool. Below are some of the reusable resources I’ve made for video games.
+                </p>
+            </div>
+        </section>
+        
+        <!-- FIRST-PERSON SHOOTER MULTIPLAYER -->
+        <section class="project_section">
+            <div class ="project_empty_div"></div>
+            <div class="project_image_div">
+                <img class="project_image" src="./assets/slc.gif">
+            </div>
+            <div class ="project_text_div">
+                <p class="project_title_text">First-Person Shooter Multiplayer</p>
+                <p class="project_text">Server-authoritative movement with client-side prediction.</p><br>
+                <p class="project_text">Lag compensation for traveling projectiles.</p><br>
+                <p class="project_text">I can’t share the source code, but I’m happy to discuss it.</p><br>
+            </div>
+        </section>
+
+        <!-- Path Generation -->
+        <section class="project_section">
+            <div class ="project_empty_div"></div>
+            <div class="project_image_div">
+                <img class="project_image" src="./assets/ppg.gif">
+            </div>
+            <div class ="project_text_div">
+                <p class="project_title_text">Path Generation</p>
+                <p class="project_text">A reusable, grid-based procedural path generation algorithm, designed to create dynamic and efficient pathways.</p><br>
+                <p class="project_text">This algorithm supports different tile sizes, each identified by a number.</p><br>
+                <p class="project_text">
+                    <a href="https://github.com/matyX6/path-gen" target="_blank" rel="noopener noreferrer" class="boxed_hyperlink">Source Code</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- OTHER PROJECTS -->
+        <section class="content_description_section" style="margin-top: 185px">
+            <div class="content_description_title_div">
+                <p class="normal_text"><span class="highlighted_text">Other Projects</span></p>
+            </div>
+            <div class="content_description_text_div">
+                <p class="normal_text">
+                    Check out some of my other cool software development projects.
+                </p>
+            </div>
+        </section>
+
+        <!-- HOMEBOUND -->
+        <section class="project_section">
+            <div class ="project_empty_div"></div>
+            <div class="project_image_div">
+                <img class="project_image" src="./assets/hom.gif">
+            </div>
+            <div class ="project_text_div">
+                <p class="project_title_text">Homebound</p>
+                <p class="project_text">Server-Client software that enables user to effortlessly create and manage a secure home server without a static IP.</p><br>
+                <p class="project_text">It's a well documented open-source software. You can take a look at the source code at the link below.</p><br>
+                <p class="project_text">
+                    <a href="https://github.com/matyX6/homebound" target="_blank" rel="noopener noreferrer" class="boxed_hyperlink">Source Code</a>
+                </p>
+            </div>
+        </section>
     </section>
 
-    <section class="projects_section">
-        <div class="project_image_div">
-            <img class="project_image" src="./assets/pha.gif">
-        </div>
-        <div class ="project_text_div">
-            <p class="project_title_text"><span class="highlighted_text">PHAGEBORN: Online Card Game</span></p>
-            <p class="project_text">Immersive online card game which combines rich and engaging storytelling with deep and strategic gameplay.</p>
-            <p class="project_text">
-                <a href="https://store.steampowered.com/app/1037990/PHAGEBORN_Online_Card_Game/" target="_blank" rel="noopener noreferrer" class="hyperlink">Steam</a>
-                <a href="https://www.youtube.com/watch?v=qEAvwwXACf8" target="_blank" rel="noopener noreferrer" class="hyperlink">Video</a>
-            </p>
-        </div>
-    </section>
-
-    <section class="projects_section">
-        <div class="project_image_div">
-            <img class="project_image" src="./assets/oth.gif">
-        </div>
-        <div class ="project_text_div">
-            <p class="project_title_text"><span class="highlighted_text">And a lot more</span></p>
-            <p class="project_text">Mobile games and prototypes, some of which are:</p>
-            <p class="project_text">
-                <a href="https://www.youtube.com/watch?v=gQjPkl1dweU" target="_blank" rel="noopener noreferrer" class="hyperlink">Bunners</a>
-                <a href="https://www.youtube.com/watch?v=JxALjkjmOGU" target="_blank" rel="noopener noreferrer" class="hyperlink">White Blocks</a>
-                <a href="https://youtu.be/pKm48l-cFgo?si=v6gDInr4Iq4c34Gu" target="_blank" rel="noopener noreferrer" class="hyperlink">Timecode</a>
-                <a href="https://youtu.be/aRm2VTPR7DQ?si=rL5PXASp6zr4cpaW" target="_blank" rel="noopener noreferrer" class="hyperlink">Snake Colors</a>
-                <a href="https://youtu.be/SNGuwE9SI9I?si=AmXg9Dysd2vneMzY" target="_blank" rel="noopener noreferrer" class="hyperlink">Planes</a>
-            </p>
-        </div>
-    </section>
-
-    <!-- Game Networking-->
-    <section class="title_section">
-        <div>
-            <p class="title_text">Game Networking</p>
-            <p class="subtitle_text">Reusable resources that I've made for multiplayer games.</p>
-        </div>
-    </section>
-
-    <section class="projects_section">
-        <div class="project_image_div">
-            <img class="project_image" src="./assets/slc.gif">
-        </div>
-        <div class ="project_text_div">
-            <p class="project_title_text"><span class="highlighted_text">First-Person Shooter Multiplayer</span></p>
-            <p class="project_text">Server-authoritative movement with client-side prediction.</p>
-            <p class="project_text">Lag compensation for traveling projectiles.</p>
-            <p class="project_text">I can’t share the source code, but I’m happy to discuss it.</p>
-        </div>
-    </section>
-
-    <!-- Other Projects-->
-    <section class="title_section">
-        <div>
-            <p class="title_text">Other Projects</p>
-            <p class="subtitle_text">I can create any type of software.</p>
-        </div>
-    </section>
-
-    <section class="projects_section">
-        <div class="project_image_div">
-            <img class="project_image" src="./assets/hom.gif">
-        </div>
-        <div class ="project_text_div">
-            <p class="project_title_text"><span class="highlighted_text">Homebound</span></p>
-            <p class="project_text">Server-Client software that enables user to effortlessly create and manage a secure home server without a static IP.</p>
-            <p class="project_text">It's a well documented open-source software. You can take a look at the source code at the link below.</p>
-            <p class="project_text">
-                <a href="https://github.com/matyX6/homebound" target="_blank" rel="noopener noreferrer" class="hyperlink">Source Code</a>
-            </p>
-        </div>
-    </section>
-
-    <section class="projects_section">
-        <div class="project_image_div">
-            <img class="project_image" src="./assets/ppg.gif">
-        </div>
-        <div class ="project_text_div">
-            <p class="project_title_text"><span class="highlighted_text">Path Generation</span></p>
-            <p class="project_text">A reusable, grid-based procedural path generation algorithm, designed to create dynamic and efficient pathways.</p>
-            <p class="project_text">This algorithm supports different tile sizes, each identified by a number.</p>
-            <p class="project_text">
-                <a href="https://github.com/matyX6/path-gen" target="_blank" rel="noopener noreferrer" class="hyperlink">Source Code</a>
-            </p>
-        </div>
-    </section>
-
+    <!-- FOOTER -->
     <section class="footer_section">
         <div class="footer_developed_by_div">
             <p class="footer_developed_by_text">
@@ -178,14 +222,10 @@
             </p>
         </div>
         <div class="footer_link_div">
-            <p class="footer_link">
-                <a href="mailto:matija.jambresic@yahoo.com" target="_blank" rel="noopener noreferrer" class="footer_link">Email</a>
-                <a href="https://github.com/matyX6" target="_blank" rel="noopener noreferrer" class="footer_link">GitHub</a>
-                <a href="https://www.linkedin.com/in/matijajambresic/" target="_blank" rel="noopener noreferrer" class="footer_link">LinkedIn</a>
-            </p>
+                <a href="mailto:matija.jambresic@yahoo.com" target="_blank" rel="noopener noreferrer" class="hyperlink">Email</a>
+                <a href="https://github.com/matyX6" target="_blank" rel="noopener noreferrer" class="hyperlink">GitHub</a>
+                <a href="https://www.linkedin.com/in/matijajambresic/" target="_blank" rel="noopener noreferrer" class="hyperlink">LinkedIn</a>
         </div>
     </section>
-
 </body>
-
 </html>
