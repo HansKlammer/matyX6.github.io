@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="styles/hyperlink.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
-    <script src="script.js"></script>
+    <script src="scripts/scroll.js"></script>
+    <script src="scripts/introImage.js"></script>
+    <script src="packages/lazysizes/lazysizes.min.js" async></script>
 </head>
 
 <body>
@@ -25,7 +27,7 @@
 
     <!-- INTRO -->
     <section class="intro_section">
-        <div class="intro_text_div">
+        <div class="intro_text_div" id="intro_text">
             <p>
                 I'm 
                 <span class="highlighted_text">Matija Jambresic</span>,
@@ -38,7 +40,7 @@
     </section>
 
     <!-- SEND MESSAGE -->
-    <section class="intro_section">
+    <section class="intro_section" style="padding-top: var(--dynamic-intro-padding)">
         <div class="normal_text">
             <p>
                 Send me a message at 
@@ -51,10 +53,10 @@
 
     <!-- ARROWS -->
     <section class="intro_arrows_section">
-        <div>
+        <div style="padding-top: 91px">
             <img class="intro_arrow" src="./assets/adn.gif">
         </div>
-        <div style="margin-top: -78px">
+        <div style="margin-top: -43px">
             <img class="intro_arrow" src="./assets/adn.gif">
         </div>
     </section>
@@ -63,18 +65,18 @@
     <section class="content_section">
         
         <!-- BACKGROUND -->
-        <section class="content_description_section" style="margin-top: 65px">
+        <section class="content_description_section">
             <div class="content_description_title_div">
-                <p class="normal_text"><span class="highlighted_text">Background</span></p>
+                <p class="normal_text"><span class="highlighted_text">Background</span></p><br>
             </div>
             <div class="content_description_text_div">
                 <p class="normal_text">
                     I'm a professional <span class="bold_text"> gameplay and networking engineer </span> based in Zagreb, Croatia. With over <span class="bold_text">7 years of experience</span>, I have contributed to a diverse range of commercial and open-source software projects.
-                </p>
+                </p><br><br>
     
                 <p class="normal_text">
                     Holding a <span class="bold_text">Professional Bachelor’s degree</span> in <span class="bold_text">Computer Science</span> with a specialization in <span class="bold_text">Software Engineering</span>, I possess a comprehensive understanding of software development and engineering principles.
-                </p>
+                </p><br><br>
     
                 <p class="normal_text">
                     Most of my specialization has been in <span class="bold_text">Unity</span> and <span class="bold_text">C#</span>, though I am also familiar with <span class="bold_text">Unreal Engine</span>.
@@ -83,9 +85,9 @@
         </section>
 
         <!-- GAME PROJECTS -->
-        <section class="content_description_section" style="margin-top: 185px">
+        <section class="content_description_section">
             <div class="content_description_title_div">
-                <p class="normal_text"><span class="highlighted_text">Game Projects</span></p>
+                <p class="normal_text"><span class="highlighted_text">Game Projects</span></p><br>
             </div>
             <div class="content_description_text_div">
                 <p class="normal_text">
@@ -98,10 +100,10 @@
         <section class="project_section">
             <div class ="project_empty_div"></div>
             <div class="project_image_div">
-                <img class="project_image" src="./assets/klp.gif">
+                <img class="project_image lazyload" src="./assets/klps.png" data-src="./assets/klp.gif">
             </div>
             <div class ="project_text_div">
-                <p class="project_title_text">Kick League</p>
+                <br><p class="project_title_text">Kick League</p><br>
                 <p class="project_text">Retro-styled, arcade multiplayer balling game!</p><br>
                 <p class="project_text">Currently in development, but you can get an exclusive sneak peek by requesting the game build.</p><br>
                 <p class="project_text"><a href="https://www.youtube.com/watch?v=rRJOZeQzzzc" target="_blank" rel="noopener noreferrer" class="boxed_hyperlink linkEffect--insideOut">Video</a></p>
@@ -112,10 +114,10 @@
         <section class="project_section">
             <div class ="project_empty_div"></div>
             <div class="project_image_div">
-                <img class="project_image" src="./assets/pha.gif">
+                <img class="project_image lazyload" src="./assets/phas.png" data-src="./assets/pha.gif">
             </div>
             <div class ="project_text_div">
-                <p class="project_title_text">PHAGEBORN: Online Card Game</p>
+                <br><p class="project_title_text">PHAGEBORN: Online Card Game</p><br>
                 <p class="project_text">Immersive online card game which combines rich and engaging storytelling with deep and strategic gameplay.</p><br>
                 <p class="project_text">
                     <a href="https://store.steampowered.com/app/1037990/PHAGEBORN_Online_Card_Game/" target="_blank" rel="noopener noreferrer" class="boxed_hyperlink">Steam</a>
@@ -128,10 +130,10 @@
         <section class="project_section">
             <div class ="project_empty_div"></div>
             <div class="project_image_div">
-                <img class="project_image" src="./assets/oth.gif">
+                <img class="project_image lazyload" src="./assets/oths.png" data-src="./assets/oth.gif">
             </div>
-            <div class ="project_text_div"> 
-                <p class="project_title_text">And a lot more</p>
+            <div class ="project_text_div">
+                <br><p class="project_title_text">And a lot more</p><br>
                 <p class="project_text">Mobile games and prototypes, some of which are:</p><br>
                 <p class="project_text">
                     <a href="https://www.youtube.com/watch?v=gQjPkl1dweU" target="_blank" rel="noopener noreferrer" class="boxed_hyperlink">Bunners</a>
@@ -144,9 +146,9 @@
         </section>
 
         <!-- GAME NETWORKING -->
-        <section class="content_description_section" style="margin-top: 185px">
+        <section class="content_description_section">
             <div class="content_description_title_div">
-                <p class="normal_text"><span class="highlighted_text">Game Tools</span></p>
+                <p class="normal_text"><span class="highlighted_text">Game Tools</span></p><br>
             </div>
             <div class="content_description_text_div">
                 <p class="normal_text">
@@ -159,10 +161,10 @@
         <section class="project_section">
             <div class ="project_empty_div"></div>
             <div class="project_image_div">
-                <img class="project_image" src="./assets/slc.gif">
+                <img class="project_image lazyload" src="./assets/slcs.png" data-src="./assets/slc.gif">
             </div>
             <div class ="project_text_div">
-                <p class="project_title_text">First-Person Shooter Multiplayer</p>
+                <br><p class="project_title_text">First-Person Shooter Multiplayer</p><br>
                 <p class="project_text">Server-authoritative movement with client-side prediction.</p><br>
                 <p class="project_text">Lag compensation for traveling projectiles.</p><br>
                 <p class="project_text">I can’t share the source code, but I’m happy to discuss it.</p><br>
@@ -173,10 +175,10 @@
         <section class="project_section">
             <div class ="project_empty_div"></div>
             <div class="project_image_div">
-                <img class="project_image" src="./assets/ppg.gif">
+                <img class="project_image lazyload" src="./assets/ppgs.png" data-src="./assets/ppg.gif">
             </div>
             <div class ="project_text_div">
-                <p class="project_title_text">Path Generation</p>
+                <br><p class="project_title_text">Path Generation</p><br>
                 <p class="project_text">A reusable, grid-based procedural path generation algorithm, designed to create dynamic and efficient pathways.</p><br>
                 <p class="project_text">This algorithm supports different tile sizes, each identified by a number.</p><br>
                 <p class="project_text">
@@ -186,9 +188,9 @@
         </section>
 
         <!-- OTHER PROJECTS -->
-        <section class="content_description_section" style="margin-top: 185px">
+        <section class="content_description_section">
             <div class="content_description_title_div">
-                <p class="normal_text"><span class="highlighted_text">Other Projects</span></p>
+                <p class="normal_text"><span class="highlighted_text">Other Projects</span></p><br>
             </div>
             <div class="content_description_text_div">
                 <p class="normal_text">
@@ -201,10 +203,10 @@
         <section class="project_section">
             <div class ="project_empty_div"></div>
             <div class="project_image_div">
-                <img class="project_image" src="./assets/hom.gif">
+                <img class="project_image lazyload" src="./assets/homs.png" data-src="./assets/hom.gif">
             </div>
             <div class ="project_text_div">
-                <p class="project_title_text">Homebound</p>
+                <br><p class="project_title_text">Homebound</p><br>
                 <p class="project_text">Server-Client software that enables user to effortlessly create and manage a secure home server without a static IP.</p><br>
                 <p class="project_text">It's a well documented open-source software. You can take a look at the source code at the link below.</p><br>
                 <p class="project_text">
@@ -222,9 +224,11 @@
             </p>
         </div>
         <div class="footer_link_div">
+            <p>
                 <a href="mailto:matija.jambresic@yahoo.com" target="_blank" rel="noopener noreferrer" class="hyperlink">Email</a>
                 <a href="https://github.com/matyX6" target="_blank" rel="noopener noreferrer" class="hyperlink">GitHub</a>
                 <a href="https://www.linkedin.com/in/matijajambresic/" target="_blank" rel="noopener noreferrer" class="hyperlink">LinkedIn</a>
+            </p>
         </div>
     </section>
 </body>

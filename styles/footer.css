@@ -10,7 +10,7 @@
 
 .footer_link_div
 {
-    padding: 20px 20px 60px 0px;
+    padding-bottom: 40px;
     word-spacing: 10px;
     text-align: end;
     font-size: large;
@@ -19,7 +19,7 @@
 
 .footer_developed_by_div
 {
-    padding: 20px 0px 60px 20px;
+    padding-bottom: 40px;
     text-align: start;
     width: 100%;
 }

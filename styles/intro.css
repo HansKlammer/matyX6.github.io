@@ -4,7 +4,8 @@
     max-width: 1200px;
     width: 100%;
     align-items: center;
-    padding-top: clamp(0px, calc(0px + (150 - 25) * ((100vh - 785px) / (1440 - 785))), 150px);
+    padding-top: var(--dynamic-intro-padding);
+    padding-bottom: var(--dynamic-intro-padding);;
     opacity: var(--intro-opacity);
     #background: #171717;
 }
@@ -15,15 +16,13 @@
     max-width: 1200px;
     width: 100%;
     align-items: start;
-    margin-top: 10px;
     opacity: var(--intro-opacity);
-    #background: #171717;
+    #background: #202020;
 }
 
 .intro_text_div
 {
-    padding: 20px;
-    font-size: clamp(24px, 2.5vw, 48px);
+    font-size: clamp(24px, 3vw, 48px);
     #background: gray;
 }
 
@@ -33,15 +32,14 @@
     flex-direction: column;
     text-align: center;
     width: 100%;
-    margin-top: 10px;
+    height: 0px;
     opacity: var(--intro-opacity);
-    #background: #171717;
+    #background: #232323;
 }
 
 .intro_arrow
 {
     background-size: contain;
-    padding-top: 35px;
     height: 44px;
     width: 44px;
     #background: gray;
@@ -58,7 +56,5 @@
 
 .intro_image
 {
-    width: 256px;
-    height: 256px;
-    padding-bottom: 48px;
+    /*Used in media screen global style*/
 }

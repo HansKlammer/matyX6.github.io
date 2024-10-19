@@ -1,3 +1,5 @@
+// A script that resolves content opacity
+
 // Dynamic content opacity
 window.addEventListener('load', applyOpacity);
 window.addEventListener('scroll', applyOpacity);
