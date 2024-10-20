@@ -5,6 +5,22 @@
         flex-direction: column;
     }
 
+    .project_section
+    {
+        flex-direction: column;
+    }
+    
+    .project_subsection
+    {
+        flex-direction: column;
+    }
+    
+    .project_image_div
+    {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    
     .intro_image
     {
         padding-top: var(--dynamic-intro-padding);
@@ -19,22 +35,6 @@
     .content_description_title_div
     {
         text-align: start;
-    }
-
-    .project_section
-    {
-        flex-direction: column;
-    }
-
-    .project_image
-    {
-        width: 100%;
-    }
-
-    .project_image_div
-    {
-        padding-left: 8px;
-        padding-right: 8px;
     }
     
     p
@@ -52,19 +52,11 @@
         height: var(--intro-image-height);
     }
     
-    .project_image_div
-    {
-        max-width: 640px;
-        max-height: 360px;
-        padding-left: 20px;
-        padding-right: 10px;
-    }
-
     .content_description_title_div
     {
         text-align: end;
     }
-
+    
     p
     {
         padding-left: 20px;
