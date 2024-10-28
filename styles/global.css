@@ -1,32 +1,5 @@
 @media screen and (max-width: 768px)
 {
-    .intro_section
-    {
-        flex-direction: column;
-    }
-
-    .project_section
-    {
-        flex-direction: column;
-    }
-    
-    .project_subsection
-    {
-        flex-direction: column;
-    }
-    
-    .project_image_div
-    {
-        padding-left: 8px;
-        padding-right: 8px;
-    }
-    
-    .intro_image
-    {
-        padding-top: var(--dynamic-intro-padding);
-        height: 200px;
-    }
-
     .content_description_section
     {
         flex-direction: column;
@@ -44,16 +17,12 @@
     }
 }
 
-@media screen and (min-width: 768px)
+@media screen and (min-width: 769px)
 {
-    .intro_image
-    {
-        padding: 0px;
-        height: var(--intro-image-height);
-    }
-    
     .content_description_title_div
     {
+        display: flex;
+        justify-content: right;
         text-align: end;
     }
     
@@ -62,33 +31,55 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    .normal_text
+    {
+        font-size: x-large;
+    }
 }
 
-@font-face 
+@media screen and (max-width: 900px)
 {
-    font-family: "Inter";
-    src: url('../fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
+    .content_description_section
+    {
+        margin-bottom: -40px; /*TODO: have this in mind if content spacing is not behaving adequately*/
+    }
+    
+    .normal_text
+    {
+        font-size: var(--y-large);
+    }
 }
 
 :root 
 {
+    --body-opacity: 0;
     --intro-opacity: 0;
     --content-opacity: 0;
+    --enable-intro-interaction: auto;
+    --enable-content-interaction: auto;
     --dynamic-intro-padding: clamp(70px, calc(70px + (200 - 70) * ((100vh - 785px) / (1440 - 785))), 200px);
+    --y-large: 21px;
     --intro-image-height: 256px;
+}
+
+html 
+{
+    -webkit-text-size-adjust: 100%; /* Prevents font scaling in mobile browser landscape*/
 }
 
 body 
 {
-    background-color: #0d1117;
+    background: black url("../assets/bg.webp");
     color: #f0f6fc;
-    font-family: "Inter", sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
+    opacity: var(--body-opacity);
+    transition: opacity 0.75s ease-in-out;
 }
 
 p
@@ -100,7 +91,7 @@ p
 
 .normal_text
 {
-    font-size: x-large;
+    /*Used in media screen global style*/
 }
 
 .highlighted_text
@@ -118,6 +109,7 @@ p
 .content_section
 {
     opacity: var(--content-opacity);
+    pointer-events: var(--enable-content-interaction);
 }
 
 .content_description_section
@@ -133,6 +125,7 @@ p
 {
     max-width: 210px;
     width: 100%;
+    #background: #171717;
 }
 
 .content_description_text_div
