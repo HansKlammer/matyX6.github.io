@@ -29,7 +29,7 @@ export const descriptionGameTools =
 
 export const descriptionOtherProjects =
 {
-    title: 'Game Tools',
+    title: 'Other Projects',
     descriptions:
         [
             'Check out some of my other cool software development projects.'
