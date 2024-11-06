@@ -1,116 +1,70 @@
-@media screen and (max-width: 768px)
-{
-    .project_section
-    {
+@media screen and (max-width: 910px) {
+    .project_section {
         flex-direction: column;
     }
 
-    .project_subsection
-    {
+    .project_subsection {
         flex-direction: column;
     }
 
-    .project_image_div
-    {
-        padding-left: 8px;
-        padding-right: 8px;
+    .project_text_div {
+        padding: 2em 0em;
     }
 }
 
-@media screen and (min-width: 769px) and (max-width: 900px)
-{
-    .project_subsection
-    {
-        flex-direction: column;
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-
-    .project_text
-    {
-        padding-left: 10px;
-    }
-    
-    .project_title_text
-    {
-        padding-left: 10px;
-    }
-}
-
-@media screen and (min-width: 901px)
-{
-    .project_subsection
-    {
+@media screen and (min-width: 910px) {
+    .project_subsection {
         flex-direction: row;
-        padding-left: 20px;
-        padding-right: 20px;
     }
-    
-    .project_text_div
-    {
+
+    .project_text_div {
+        padding: 2em;
         max-width: 330px;
     }
 }
 
-.project_section
-{
+.project_section {
     max-width: 1200px;
     width: 100%;
-    margin-top: 110px;
+    padding: 4em 0em;
     display: flex;
-    align-items: flex-start;
-    #background: #171717;
 }
 
-.project_subsection
-{
+.project_subsection {
     width: 100%;
     display: flex;
-    align-items: flex-start;
-    #background: gray;
+    opacity: var(--content-opacity);
 }
 
-.project_empty_div
-{
-    min-width: 210px;
-    #background: gray;
-}
-
-.project_title_text
-{
+.project_title_text {
+    color: #808080;
     font-size: large;
     text-align: start;
     text-decoration: none;
     font-weight: bold;
-    padding-top: 15px;
-    color: #808080;
 }
 
-.project_image_div
-{
+.project_image_div {
     box-sizing: border-box;
     width: 100%;
-    aspect-ratio: 16/9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex: 2;
-    #background: gray;
 }
 
-.project_image
-{
+.project_image {
     width: 100%;
     height: auto;
     border-radius: 5px;
     border: solid rgba(255, 255, 255, 0.15) 1px;
 }
 
-.project_text_div
-{
+.project_text_div {
     width: 100%;
     flex: 1;
-    #background: gray;
 }
 
-.project_text
-{
+.project_text {
     font-size: large;
 }
